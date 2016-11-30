@@ -2,14 +2,15 @@
 <manifest>
   <remote name="denx" fetch="git://git.denx.de/"/>
   <remote name="github" fetch="git://github.com/NVIDIA/"/>
+  <remote name="wombat" fetch="git://github.com/wom-bat/"/>
   <remote name="korg" fetch="git://git.kernel.org/pub/scm/"/>
 
   <default revision="master"/>
 
   <project path="cbootimage" name="cbootimage.git" remote="github" groups="tools"/>
-  <project path="cbootimage-configs" name="cbootimage-configs.git" remote="github"/>
+  <project path="cbootimage-configs" name="cbootimage-configs.git" remote="wombat"/>
   <project path="dtc" name="utils/dtc/dtc.git" remote="korg" groups="tools"/>
-  <project path="scripts" name="tegra-uboot-flasher-scripts.git" remote="github"/>
+  <project path="scripts" name="tegra-uboot-flasher-scripts.git" remote="wombat"/>
   <project path="tegrarcm" name="tegrarcm.git" remote="github" groups="tools"/>
   <project path="u-boot" name="u-boot.git" remote="denx" groups="bootloader"/>
 </manifest>
